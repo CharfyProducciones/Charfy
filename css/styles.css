@@ -237,50 +237,54 @@ nav ul li a:after {
 
 .mobile-nav ul li a {
     color: var(--dark-text);
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 20px; /* Aumentado el tamaño de la fuente */
+    padding: 15px 0; /* Aumentado el padding vertical */
 }
 
 .mobile-nav ul li a:hover {
     color: var(--accent-color);
+    background-color: rgba(240, 200, 8, 0.1); /* Sutil efecto de fondo al pasar el ratón */
+    border-radius: 4px;
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     header .container {
-        flex-wrap: nowrap; /* Evitar que se envuelva */
-        justify-content: space-between; /* Alinear logo a la izquierda y toggle a la derecha */
-        align-items: center; /* Centrar verticalmente */
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px 0 5px; /* Adjusted padding to move content slightly left */
     }
 
     .logo {
-        width: auto; /* Permitir que el ancho se ajuste al contenido */
+        width: auto;
         text-align: left;
         margin-bottom: 0;
     }
 
     .logo a {
-        justify-content: flex-start; /* Alinear el logo a la izquierda */
+        justify-content: flex-start;
     }
 
     .logo-img {
-        height: 60px; /* Ajustar el tamaño del logo */
+        height: 60px;
     }
 
     .logo-text {
-        font-size: 22px; /* Ajustar el tamaño del texto del logo */
+        font-size: 20px; /* Further reduce font size for better fit */
         margin-left: 10px;
     }
 
     nav {
-        display: none; /* Ocultar navegación principal en móvil */
+        display: none;
     }
 
     .menu-toggle {
-        display: block; /* Mostrar el botón de menú en móvil */
-        position: static; /* Eliminar posicionamiento absoluto */
+        display: block;
+        position: static;
         right: auto;
         top: auto;
+        margin-left: 10px; /* Add margin to separate from logo text */
     }
 
     .hero h1 {
@@ -294,11 +298,13 @@ nav ul li a:after {
     .btn {
         padding: 10px 20px;
         font-size: 14px;
+        margin-bottom: 15px; /* Added margin for separation */
     }
 
     .btn-outline {
         padding: 8px 18px;
         font-size: 14px;
+        margin-bottom: 15px; /* Added margin for separation */
     }
 
     section {
@@ -795,6 +801,18 @@ header.scrolled nav ul li a {
     color: var(--header-text-scrolled);
 }
 
+header.scrolled .mobile-nav ul li a {
+    color: var(--header-text-scrolled);
+}
+
+header.scrolled .mobile-nav {
+    background-color: var(--header-bg-scrolled);
+}
+
+header.scrolled .menu-toggle {
+    color: var(--header-text-scrolled);
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero-content h1 {
@@ -879,6 +897,7 @@ header.scrolled nav ul li a {
     .btn {
         padding: 10px 20px;
         font-size: 14px;
+        margin-bottom: 15px; /* Added margin for separation */
     }
 
     .email-button {
@@ -903,5 +922,9 @@ header.scrolled nav ul li a {
 
     .social-icons {
         justify-content: center;
+    }
+
+    .logo-text {
+        font-size: 18px; /* Even smaller font size for very small screens */
     }
 }
