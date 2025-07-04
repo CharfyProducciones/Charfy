@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- Logo de Charfy Producciones para favicon -->
+  <g fill="#000000">
+    <!-- Parte superior izquierda -->
+    <polygon points="150,150 200,150 150,200"/>
+    
+    <!-- Parte superior derecha -->
+    <path d="M200,150 L400,150 L400,200 L300,200 Z"/>
+    
+    <!-- Parte central -->
+    <polygon points="150,200 200,200 200,250 150,250" transform="rotate(45, 175, 225)"/>
+    
+    <!-- Parte inferior izquierda -->
+    <polygon points="150,250 150,300 200,250"/>
+    
+    <!-- Parte inferior derecha -->
+    <path d="M200,250 L300,250 L400,250 L400,300 Z"/>
+  </g>
+</svg>
