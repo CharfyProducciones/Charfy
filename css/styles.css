@@ -237,23 +237,25 @@ nav ul li a:after {
 
 .mobile-nav ul li a {
     color: var(--dark-text);
-    font-size: 20px; /* Aumentado el tamaño de la fuente */
-    padding: 15px 0; /* Aumentado el padding vertical */
+    font-size: 18px;
+    padding: 10px 0;
 }
 
 .mobile-nav ul li a:hover {
     color: var(--accent-color);
-    background-color: rgba(240, 200, 8, 0.1); /* Sutil efecto de fondo al pasar el ratón */
-    border-radius: 4px;
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+
     header .container {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px 0 5px; /* Adjusted padding to move content slightly left */
+        padding: 0 10px;
     }
 
     .logo {
@@ -267,12 +269,13 @@ nav ul li a:after {
     }
 
     .logo-img {
-        height: 60px;
+        height: 45px;
+        transform: scale(1);
     }
 
     .logo-text {
-        font-size: 20px; /* Further reduce font size for better fit */
-        margin-left: 10px;
+        font-size: 18px;
+        margin-left: 8px;
     }
 
     nav {
@@ -284,27 +287,38 @@ nav ul li a:after {
         position: static;
         right: auto;
         top: auto;
-        margin-left: 10px; /* Add margin to separate from logo text */
+        margin-left: 10px;
+    }
+
+    .hero {
+        height: 80vh;
+        padding: 40px 0;
+    }
+
+    .hero-content {
+        padding: 20px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 15px;
     }
 
     .hero p {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
     .btn {
         padding: 10px 20px;
         font-size: 14px;
-        margin-bottom: 15px; /* Added margin for separation */
+        margin-bottom: 15px;
     }
 
     .btn-outline {
         padding: 8px 18px;
         font-size: 14px;
-        margin-bottom: 15px; /* Added margin for separation */
+        margin-bottom: 15px;
     }
 
     section {
